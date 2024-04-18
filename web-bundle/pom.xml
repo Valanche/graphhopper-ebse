@@ -89,7 +89,7 @@
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>leaflet</artifactId>
-            <version>1.5.1</version>
+            <version>1.8.0</version>
         </dependency>
         <dependency>
             <groupId>org.webjars</groupId>
@@ -181,9 +181,7 @@
                         <phase>process-resources</phase>
                         <configuration>
                             <target>
-                                <untar compression="gzip"
-                                       src="${basedir}/target/graphhopper-graphhopper-maps-bundle-${graphhopper-maps.version}.tgz"
-                                       dest="${basedir}/target/classes/com/graphhopper/maps">
+                                <untar compression="gzip" src="${basedir}/target/graphhopper-graphhopper-maps-bundle-${graphhopper-maps.version}.tgz" dest="${basedir}/target/classes/com/graphhopper/maps">
                                     <patternset>
                                         <include name="package/dist/**"/>
                                         <exclude name="package/dist/config.js"/>
